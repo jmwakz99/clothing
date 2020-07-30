@@ -5,6 +5,7 @@ import Header from "./components/header/header.component";
 import { connect } from "react-redux";
 import SHOP from "./pages/shop/shop.component";
 import SignInAndSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
+import Checkout from "./components/checkout/checkout.component";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import "./App.css";
@@ -47,6 +48,7 @@ class App extends React.Component {
               currentUser ? <Redirect to="/" /> : <SignInAndSignUp />
             }
           />
+          <Route exact path="/checkout" component={Checkout} />
         </Switch>
       </div>
     );
