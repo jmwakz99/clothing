@@ -18,14 +18,7 @@ const Header = ({ currentUser, hidden }) => (
     <div className="options">
       {currentUser ? (
         <div className="option">
-          <span className="profile-container">
-            <img
-              src={`${currentUser.photoURL}`}
-              alt=""
-              className="profile-pic"
-            />
-            {currentUser.email}
-          </span>
+          <span className="profile-container">{currentUser.email}</span>
         </div>
       ) : (
         ""

@@ -34,7 +34,7 @@ const Checkout = ({ cartItems, total, dispatch }) => (
     ))}
 
     <div className="total">
-      <span>TOTAL: KSH{total}</span>
+      <span>TOTAL: ${total}</span>
     </div>
     <div className="test-warning">
       *Please use the following test credit card for payments*
